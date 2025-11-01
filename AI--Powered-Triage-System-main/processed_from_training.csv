@@ -1,0 +1,12 @@
+csv_id,age,gender,chief_complaint,heart_rate,blood_pressure,temperature,medical_history,original_triage,predicted_triage,confidence,added_to_queue_at,queue_patient_id
+2,40,Male,Chest Pain,95,130,37.1,Diabetes,Critical,Critical,0.8,2025-11-01T12:39:48.210479,1
+1,25,Female,Headache,85,120,36.7,Asthma,Moderate,Low,0.97,2025-11-01T12:40:19.418130,2
+3,30,Female,Fever,80,110,36.5,Hypertension,Low,Low,0.97,2025-11-01T12:49:51.956254,1
+3,30,Female,Fever,80,110,36.5,Hypertension,Low,Low,0.97,2025-11-01T12:50:32.739794,2
+5,22,Female,Headache,78,115,36.6,,Low,Low,0.96,2025-11-01T12:54:04.401439,1
+6,23,Male,Headache,65,65,42.8,Diabetes,Low,Low,0.96,2025-11-01T12:54:14.495212,1
+4,60,Male,Chest Pain,100,140,37.3,Heart Disease,Critical,Critical,0.93,2025-11-01T13:02:09.712503,1
+8,20,Male,chest,39,58,31.2,none,Critical,Critical,0.795,2025-11-01T13:07:34.403386,2
+10,45,Male,leg,42,61,37.1,Diabetes,Low,Critical,0.565,2025-11-01T13:07:39.751389,3
+12,57,Male,hand,55,72,33.9,cancer,Low,Low,0.77,2025-11-01T13:07:51.832277,4
+7,23,Female,fever,34,56,30.4,diabetes,Critical,Critical,0.77,2025-11-01T14:37:50.369862,5

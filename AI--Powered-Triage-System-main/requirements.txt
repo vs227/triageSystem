@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+flask
+flask-cors
+matplotlib
+seaborn
+cryptography
+openai
+python-dotenv

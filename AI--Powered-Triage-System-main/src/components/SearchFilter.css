@@ -1,0 +1,196 @@
+.search-filter {
+  background: rgba(26, 31, 58, 0.6);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.search-filter h3 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.search-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: rgba(18, 24, 41, 0.6);
+  backdrop-filter: var(--blur-sm);
+  -webkit-backdrop-filter: var(--blur-sm);
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.search-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  background: rgba(18, 24, 41, 0.8);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2), var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.search-input:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(18, 24, 41, 0.7);
+}
+
+.filter-select {
+  padding: 0.875rem 1rem;
+  background: rgba(18, 24, 41, 0.6);
+  backdrop-filter: var(--blur-sm);
+  -webkit-backdrop-filter: var(--blur-sm);
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  background: rgba(18, 24, 41, 0.8);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2), var(--shadow-sm);
+}
+
+.filter-select:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(18, 24, 41, 0.7);
+}
+
+.age-range {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.age-input {
+  flex: 1;
+  padding: 0.875rem 1rem;
+  background: rgba(18, 24, 41, 0.6);
+  backdrop-filter: var(--blur-sm);
+  -webkit-backdrop-filter: var(--blur-sm);
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.age-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.age-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  background: rgba(18, 24, 41, 0.8);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2), var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.age-input:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(18, 24, 41, 0.7);
+}
+
+.search-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.search-btn,
+.clear-btn {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-btn {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.search-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.search-btn:hover::before {
+  left: 100%;
+}
+
+.search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.clear-btn {
+  background: rgba(18, 24, 41, 0.6);
+  backdrop-filter: var(--blur-sm);
+  -webkit-backdrop-filter: var(--blur-sm);
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border-color);
+}
+
+.clear-btn:hover {
+  background: rgba(18, 24, 41, 0.8);
+  color: var(--text-primary);
+  border-color: rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .age-range {
+    flex-direction: column;
+  }
+  
+  .age-input {
+    width: 100%;
+  }
+  
+  .search-filter {
+    padding: 1.5rem;
+  }
+}
